@@ -33,6 +33,9 @@ public class SignUpScreenTest {
 
     @Test
     public void clickSignUpButtonAfterFillingForm_showProgressAndSuccessScreen() {
+        /**
+         * todo - test fõ trong edittext, test sau khi gõ nó hiện ra chữ gì
+         */
         String first_name = "Firstname";
         String last_name = "lastname";
         String emailAddress = "firstname.lastname@g.com";
@@ -53,7 +56,8 @@ public class SignUpScreenTest {
         //click the signup button
         onView(withId(R.id.button_sign_up)).perform(click());
 
-        //check that we can see the success screen with success message
+        // todo - check that we can see the success screen with success message
+        // id = text_view_status_message là nằm trong activity khác rồi, và ta check view đó có chứa chữ đó ko
         String successString = InstrumentationRegistry.getTargetContext().getString(R.string.text_sign_up_successful);
         onView(withId(R.id.text_view_status_message)).check(matches(allOf(withText(successString), isDisplayed())));
     }
