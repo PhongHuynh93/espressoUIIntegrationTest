@@ -72,7 +72,7 @@ public class MainScreenTest {
             ActivityTestRule<MainActivity>(MainActivity.class);
 
     /**
-     * todo 10 - To test that the Signup screen shows up when the Signup button is clicked, we do the following:
+     * todo  - To test that the Signup screen shows up when the Signup button is clicked, we do the following:
      Locate the Signup button using the withId ViewMatcher.
      Perform a click() action on the button.
      Assert that the Signup screen is displayed.
